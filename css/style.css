@@ -538,7 +538,7 @@ body .center a
 }
 .wrong
 {
-	background-color: #fdbd31 !important;
+	background-color: #f88884 !important;
 	color: white !important;
 	font-weight: 600;
 }
@@ -554,10 +554,10 @@ body .center a
 	margin-bottom: 25px;
 	border-radius: 20px;
 	border: 1px solid #0e529f;
-	/* box-shadow: 0px 10px 30px #5A5A5A;
+	box-shadow: 0px 10px 30px #5A5A5A;
 	-webkit-box-shadow: 0px 10px 30px #5A5A5A;
 	-moz-box-shadow: 0px 10px 30px #5A5A5A;
-	-o-box-shadow: 0px 10px 30px #5A5A5A; */
+	-o-box-shadow: 0px 10px 30px #5A5A5A;
 }
 .controls
 {

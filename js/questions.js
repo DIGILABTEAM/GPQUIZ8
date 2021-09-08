@@ -22,7 +22,7 @@ var data =
 			},
 			{
 				question: "In March 1999, Levosalbutamol was approved in the United States as a solution to be used with a nebulizer device",
-				option1: "True",
+				option1: "TRUE",
 				option2: "FALSE",
 				answer: 1
 			},
