@@ -15,19 +15,23 @@ var data =
 				answer: 1
 			},
 			{
-				question: "The terminal half-life of ambroxol in the plasma is 7 - 12 hours",
-				option1: "TRUE",
-				option2: "FALSE",
-				answer: 1
+				question: "Which of the following should not be used to treat a productive cough?",
+				option1: "Guaifenesin",
+				option2: "Dextromethorphan",
+				option3: "Diphenhydramine",
+				option4: "Simple linctus",	
+				answer: 2
 			},
 			{
-				question: "In March 1999, Levosalbutamol was approved in the United States as a solution to be used with a nebulizer device",
-				option1: "TRUE",
-				option2: "FALSE",
-				answer: 1
+				question: "Which of the following can cause dry mouth as a side effect?",
+				option1: "Guaifenesin",
+				option2: "Dextromethorphan",
+				option3: "Diphenhydramine",
+				option4: "Simple linctus",
+				answer: 3
 			},
 			{
-				question: "30.	The use of Guaiphenesin as a natural remedy dates back to the 1500s, when guaiac tree extracts were used by Native Americans to treat various illnesses, like sore throat",
+				question: "The use of Guaiphenesin as a natural remedy dates back to the 1500s, when guaiac tree extracts were used by Native Americans to treat various illnesses, like sore throat",
 				option1: "TRUE",
 				option2: "FALSE",
 				answer: 1

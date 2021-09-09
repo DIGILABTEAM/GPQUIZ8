@@ -501,6 +501,8 @@ body .center a
 	border-radius: 25px;
 	border: 5px solid #0e7b3e;
 	cursor: pointer;
+
+	display: none;
 }
 .options li:active
 {

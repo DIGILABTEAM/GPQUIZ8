@@ -113,18 +113,20 @@ function quizInit() {
 }
 
 function updateQuestions() {
-	$("#qNo").html("");
+	$("#qNo, #question").html("");
+    $("#option1, #option2, #option3, #option4").html("").css("display", "none");
 	$("#qNo").html(5 - sQuestions.size());
-	$("#question").html("");
 	$("#question").html(cQuestion.question);
-	$("#option1").html("");
-	$("#option1").html(cQuestion.option1);
-	$("#option2").html("");
-	$("#option2").html(cQuestion.option2);
-	$("#option3").html("");
-	$("#option3").html(cQuestion.option3);
-	$("#option4").html("");
-	$("#option4").html(cQuestion.option4);
+	console.log(cQuestion.option1)
+	$("#option2").html("ABCDXYS").css("display", "block");
+    if(cQuestion.option1)
+		$("#option1").html(cQuestion.option1).css("display", "block");
+    if(cQuestion.option2)
+	$("#option2").html(cQuestion.option2).css("display", "block");
+    if(cQuestion.option3)
+	$("#option3").html(cQuestion.option3).css("display", "block");
+    if(cQuestion.option4)
+	$("#option4").html(cQuestion.option4).css("display", "block");
 }
 
 function removeClasses() {
@@ -328,7 +330,7 @@ function setPercentage(percent) {
 	}
 	$('.percentBar').circleProgress({
 		value: percent,
-		size: '100',
+		size: '50',
 		startAngle: -1.57079633,
 		fill: {
 			color: '#f1c40f'
@@ -398,23 +400,23 @@ function getAvg(choice) {
 			}
 			break;
 
-		case 6:
-			if (localStorage.getItem("Avg6") == null) {
-				return null;
-			}
-			else {
-				return Number(localStorage.getItem("Avg6"));
-			}
-			break;
+		// case 6:
+		// 	if (localStorage.getItem("Avg6") == null) {
+		// 		return null;
+		// 	}
+		// 	else {
+		// 		return Number(localStorage.getItem("Avg6"));
+		// 	}
+		// 	break;
 
-		case 7:
-			if (localStorage.getItem("Avg7") == null) {
-				return null;
-			}
-			else {
-				return Number(localStorage.getItem("Avg7"));
-			}
-			break;
+		// case 7:
+		// 	if (localStorage.getItem("Avg7") == null) {
+		// 		return null;
+		// 	}
+		// 	else {
+		// 		return Number(localStorage.getItem("Avg7"));
+		// 	}
+		// 	break;
 	}
 }
 
