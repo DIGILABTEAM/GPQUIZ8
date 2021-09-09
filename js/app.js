@@ -113,20 +113,16 @@ function quizInit() {
 }
 
 function updateQuestions() {
-	$("#qNo, #question").html("");
-    $("#option1, #option2, #option3, #option4").html("").css("display", "none");
+    $("#qNo, #question, #option1, #option2, #option3, #option4").html("");
 	$("#qNo").html(5 - sQuestions.size());
 	$("#question").html(cQuestion.question);
-	console.log(cQuestion.option1)
-	$("#option2").html("ABCDXYS").css("display", "block");
-    if(cQuestion.option1)
-		$("#option1").html(cQuestion.option1).css("display", "block");
-    if(cQuestion.option2)
-	$("#option2").html(cQuestion.option2).css("display", "block");
-    if(cQuestion.option3)
-	$("#option3").html(cQuestion.option3).css("display", "block");
-    if(cQuestion.option4)
-	$("#option4").html(cQuestion.option4).css("display", "block");
+	for(var i=1; i<5; i++){
+		$(".options > li:eq("+(i-1)+")").css('display','none')
+		if(cQuestion['option'+i]){
+			$("#option"+i).html(cQuestion['option'+i])
+			$(".options > li:eq("+(i-1)+")").css('display','block')
+		}
+	}
 }
 
 function removeClasses() {
